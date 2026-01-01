@@ -1,26 +1,41 @@
-🚢 Titanic & Exam Score Prediction
-A machine learning project comparing Linear Regression and Random Forest across two datasets: student performance and Titanic survival.
+Here’s a simplified version of your `README.md` without emojis and with a more concise structure:
 
-📊 Results Summary
-Linear Regression: ~73.7% Accuracy
+````markdown
+# Machine Learning Project Collection
 
-Random Forest: Optimized using K-Fold Cross Validation
+This repository contains 5 Jupyter notebooks demonstrating different machine learning models. The notebook `exam_score_prediction.ipynb` is the main one and shows the best-performing model.
 
-Key Features: Study Hours, Attendance, Gender (Sex), and Class (Pclass).
+## Notebooks Overview
 
-🛠️ Key Techniques Used
-Data Cleaning: Handling missing values and category mapping.
+1. **exam_score_prediction.ipynb**  
+   - Predicts student exam scores using Linear Regression.  
+   - Includes model evaluation and saving/loading with `joblib`.  
 
-Feature Selection: Removing "noise" variables with low correlation.
+2. **linear_regression_models.ipynb**  
+   - Compares Linear Regression, Ridge, and Lasso models.  
+   - Uses cross-validation and evaluates test R² scores.  
 
-Validation: 5-Fold Cross-Validation for stable performance metrics.
+3. **decision_tree_analysis.ipynb**  
+   - Explores Decision Tree Regressor performance.  
+   - Includes hyperparameter tuning and tree visualization.  
 
-Tuning: Hyperparameter optimization for Random Forest.
+4. **random_forest_tuning.ipynb**  
+   - Trains Random Forest models with hyperparameter tuning.  
+   - Uses GridSearchCV with cross-validation for improvement.  
 
-🚀 Getting Started
-Clone the repo:
+5. **model_comparison.ipynb**  
+   - Summarizes and compares results from all models.  
 
-Bash
+## Requirements
 
-git clone https://github.com/ReAlangari/ml-exam_score_prediction-Titanic.git
-Run the Jupyter Notebook to see the data visualizations and model comparisons.
+```text
+python >= 3.7
+tensorflow==2.12.0rc0
+keras==2.12.0rc0
+numpy==1.23.5
+Pillow==9.4.0
+opencv-python
+scikit-learn
+pandas
+joblib
+````
